@@ -16,14 +16,11 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 8000;
-// const corsOptions = {
-//   origin: true,
-//   credentials: true,
-// };
 const corsOptions = {
-  origin: 'https://divyaindia.onrender.com', // Update with your frontend's URL
+  origin: true,
   credentials: true,
 };
+
 
 // Middleware
 app.use(express.json());
