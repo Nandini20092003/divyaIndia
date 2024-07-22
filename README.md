@@ -1,108 +1,70 @@
-# DivyaIndia Tour Management 🚀
+# Getting Started with Create React App
 
-🌟 Welcome to DivyaIndia, a comprehensive MERN stack application designed for managing tours and heritage sites. This project provides a platform to explore, manage, and book tours, with a responsive design and user-friendly interface. 🌍
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Live Demo 🌐
+## Available Scripts
 
-Explore the live demo of the application at [https://divyaindia.onrender.com](https://divyaindia.onrender.com). 🎥
+In the project directory, you can run:
 
-## Features ✨
+### `npm start`
 
-- **User Authentication**: Secure sign-up and login functionality. 🔐
-- **Tour Management**: Create, update, delete, and fetch tour details. 🗺️
-- **Heritage Site Management**: Manage information about heritage sites. 🏛️
-- **Search Functionality**: Easily search for tours and heritage sites. 🔍
-- **Responsive Design**: Optimized for both desktop and mobile devices. 📱💻
-- **Interactive Quiz**: Engage with interactive quizzes related to heritage sites. 🧠
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Technologies Used 🛠️
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- **Frontend**: React, Redux, CSS/SCSS 🚀
-- **Backend**: Node.js, Express.js 🖥️
-- **Database**: MongoDB (with Mongoose) 🗄️
-- **Authentication**: JSON Web Tokens (JWT) 🔑
-- **Deployment**: Render.com for live hosting 🌐
+### `npm test`
 
-## Getting Started 🚧
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-To get a local copy up and running, follow these steps:
+### `npm run build`
 
-### Prerequisites 📝
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- Node.js and npm (Node Package Manager) installed. 📦
-- MongoDB server running (for local development). 🛠️
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### Installation 🛠️
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-1. **Clone the repository:**
+### `npm run eject`
 
-   ```sh
-   git clone https://github.com/yourusername/DivyaIndia-tour-management.git
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-2. **Navigate to the project directory:**
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-   ```sh
-   cd DivyaIndia-tour-management
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-3. **Install backend dependencies:**
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-   ```sh
-    cd backend
-    npm install
+## Learn More
 
-4. **Install frontend dependencies:**
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-   ```sh
-    cd ../frontend
-    npm install
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-5. **Set up environment variables:**
+### Code Splitting
 
-  - Create a .env file in the backend directory and add your environment variables (e.g., MongoDB URI, JWT secret). 🌱
-   
-6. **Install backend dependencies:**
-- Backend
-  ```sh
-    cd backend
-    npm start
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-- Frontend
-   ```sh
-    cd ../frontend
-    npm start
-The application will be available at http://localhost:3000. 🚀
+### Analyzing the Bundle Size
 
-## Building for Production 🔨
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-1. **Create a production build for the frontend:**
-    ```sh
-    cd frontend
-    npm run build
+### Making a Progressive Web App
 
-2. **Deploy the application:**
-- Follow the deployment instructions provided by your hosting service (e.g., Render.com) to deploy both frontend and backend. 🌐
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## Usage 💡
-- Access the app at https://divyaindia.onrender.com. 🌟
-- Sign up for a new account or log in if you already have one. 🔐
-- Explore tours and heritage sites using the search functionality. 🧳
-- Manage tours and sites if you have the appropriate permissions. 🛠️
+### Advanced Configuration
 
-## Contributing 🤝
-Contributions are welcome! Please follow these steps to contribute:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-1. Fork the repository.
-2. Create a new branch (`\git checkout -b feature/YourFeature`). 🌱
-3. Commit your changes (`git commit -am 'Add new feature'`). 💬
-4. Push to the branch (`git push origin feature/YourFeature`). 🚀
-5. Create a new Pull Request. 🔄
+### Deployment
 
-## Acknowledgments 🙌
-- [Render.com](https://render.com/) for hosting. 🌐
-- [React](https://react.dev/learn/installation) and [Node.js](https://nodejs.org/en/download/package-manager) communities for their invaluable contributions and support. 🙌
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-## Contact 📬
-For any inquiries, please contact:
-- Email: yadavnandini20092003@gmail.com 📧
+### `npm run build` fails to minify
 
-Happy coding! 🎉
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
