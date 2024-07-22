@@ -3,7 +3,8 @@ import dotenv from "dotenv";
 import cors from "cors";
 import mongoose from "mongoose";
 import cookieParser from "cookie-parser";
-import path from "path";
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
 import tourRoute from "./routes/tours.js";
 import userRoute from "./routes/users.js";
 import authRoute from "./routes/auth.js";
@@ -24,7 +25,12 @@ const corsOptions = {
 app.use(express.json());
 app.use(cors(corsOptions));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "../frontend/build")));
+
+// Resolve __dirname equivalent
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+app.use(express.static(join(__dirname, "../frontend/build")));
 
 // Database connection
 mongoose.set("strictQuery", false);
@@ -50,7 +56,7 @@ app.use("/api/v1/heritageSites", heritageSiteRoute);
 
 // Catch-all handler for any request that doesn't match the above routes
 app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
+  res.sendFile(join(__dirname, "../frontend/build/index.html"));
 });
 
 // Start server
