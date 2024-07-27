@@ -2,7 +2,7 @@
 
 Welcome to DivyaIndia, a comprehensive MERN stack application designed for managing tours and heritage sites. This project provides a platform to explore, manage, and book tours, with a responsive design and user-friendly interface.
 
-![DivyaIndia](assets/images/homepage-screenshot.png)
+![DivyaIndia](frontend/src/assets/images/homepage-screenshot.png)
 
 ## Live Demo
 
@@ -28,13 +28,13 @@ Explore the live demo of the application at [https://divyaindia.onrender.com](ht
 ## Screenshots
 
 ### Home Page
-![Home Page](assets/images/homepage-screenshot.png)
+![Home Page](frontend/src/assets/images/homepage-screenshot.png)
 
 ### Tour Management
-![Tour Management](assets/images/tour-management-screenshot.png)
+![Tour Management](frontend/src/assets/images/tour-management-screenshot.png)
 
 ### Heritage Site Details
-![Heritage Site Details](assets/images/heritage-site-details-screenshot.png)
+![Heritage Site Details](frontend/src/assets/images/heritage-site-details-screenshot.png)
 
 ### Usage
 
