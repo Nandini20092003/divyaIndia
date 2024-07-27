@@ -1,3 +1,4 @@
+//Header
 import React, { useRef, useEffect, useContext } from "react";
 import { Container, Row, Button } from "reactstrap";
 import { NavLink, Link, useNavigate } from "react-router-dom";
@@ -48,6 +49,7 @@ const Header = () => {
         headerRef.current.classList.add("sticky__header");
       } else {
         headerRef.current.classList.remove("sticky__header");
+        // headerRef.current.classList.remove("sticky__header");
       }
     });
   };

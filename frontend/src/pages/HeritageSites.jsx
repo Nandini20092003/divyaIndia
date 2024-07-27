@@ -12,19 +12,19 @@ const HeritageSites = () => {
   const [pageCount, setPageCount] = useState(0);
   const [page, setPage] = useState(0);
 
-  const {
-    data: heritageSites,
-    loading,
-    error,
-  } = useFetch(`${BASE_URL}/heritageSites?page=${page}`);
+  const { data: heritageSites, loading, error } = useFetch(
+    `${BASE_URL}/heritageSites?page=${page}`
+  );
   const { data: heritageSiteCount } = useFetch(
     `${BASE_URL}/heritageSites/search/getHeritageSiteCount`
   );
 
   useEffect(() => {
-    const pages = Math.ceil(heritageSiteCount / 8);
-    setPageCount(pages);
-    window.scrollTo(0, 0);
+    if (heritageSiteCount) {
+      const pages = Math.ceil(heritageSiteCount / 8);
+      setPageCount(pages);
+      window.scrollTo(0, 0);
+    }
   }, [page, heritageSiteCount, heritageSites]);
 
   return (

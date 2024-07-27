@@ -9,9 +9,9 @@ import TourDetails from "../pages/TourDetails";
 import Tours from "../pages/Tours";
 import Travel from "../pages/Travel";
 import ThankYou from "../pages/ThankYou";
-import HeritageSiteDetails from "../pages/HeritageSiteDetails.jsx";  
-import HeritageSites from "../pages/HeritageSites.jsx";
-import Quiz from "../components/Quiz/Quiz.jsx";
+import HeritageSiteDetails from "../pages/HeritageSiteDetails";  
+import HeritageSites from "../pages/HeritageSites";
+import Quiz from "../components/Quiz/Quiz";
 
 const Routers = () => {
   return (

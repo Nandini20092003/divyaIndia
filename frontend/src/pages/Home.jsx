@@ -6,13 +6,13 @@ import heroImg02 from "../assets/images/home-hero-img02.jfif";
 import heroVideo from "../assets/images/home-hero-video.mp4";
 import worldImg from "../assets/images/world.png";
 import experienceImg from "../assets/images/experience.png";
-import Subtitle from "./../shared/Subtitle";
+import Subtitle from "../shared/Subtitle";
 // import SearchBar from "../shared/SearchBar";
 import ServiceList from "../services/Home-ServiceList";
+import HeritageSiteList from "../components/Heritage-sites/HeritageSiteList";
 import MasonryImagesGallery from "../components/Image-gallery/MasonryImagesGallery";
 import Testimonials from "../components/Testimonial/Testimonials";
 import Newsletter from "../shared/Newsletter";
-import HeritageSiteList from "../components/Heritage-sites/HeritageSiteList";
 
 const Home = () => {
   return (
@@ -24,7 +24,7 @@ const Home = () => {
               <div className="home-hero__content">
                 <div className="home-hero__subtitle d-flex align-items-center">
                   <Subtitle subtitle={"Know Before You Go"} />
-                  <img src={worldImg} alt="" />
+                  <img src={worldImg} alt="world" />
                 </div>
                 <h1>
                   Journey through the{" "}
@@ -40,17 +40,17 @@ const Home = () => {
             </Col>
             <Col lg="2">
               <div className="home-hero__img-box">
-                <img src={heroImg} alt="" />
+                <img src={heroImg} alt="hero" />
               </div>
             </Col>
             <Col lg="2">
               <div className="home-hero__img-box hero__video-box mt-4">
-                <video src={heroVideo} alt="" controls />
+                <video src={heroVideo} alt="hero video" controls />
               </div>
             </Col>
             <Col lg="2">
               <div className="home-hero__img-box mt-5">
-                <img src={heroImg02} alt="" />
+                <img src={heroImg02} alt="hero" />
               </div>
             </Col>
             {/* <SearchBar /> */}
@@ -104,11 +104,11 @@ const Home = () => {
               <div className="home-counter__wrapper d-flex align-items-center gap-5">
                 <div className="home-counter__box">
                   <span>12k+</span>
-                  <h6>Successful trip</h6>
+                  <h6>Successful trips</h6>
                 </div>
                 <div className="home-counter__box">
                   <span>2k+</span>
-                  <h6>Regular client</h6>
+                  <h6>Regular clients</h6>
                 </div>
                 <div className="home-counter__box">
                   <span>15</span>

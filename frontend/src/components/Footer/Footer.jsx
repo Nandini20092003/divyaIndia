@@ -54,13 +54,13 @@ const Footer = () => {
             </div>
             <div className="social__links d-flex align-items-center gap-4">
               <span>
-                <Link to="#">
+                <Link to="https://github.com/Nandini20092003" target="blank">
                   <i className="ri-github-fill"></i>
                 </Link>
               </span>
               <span>
-                <Link to="#">
-                  <i className="ri-instagram-line"></i>
+                <Link to="https://www.linkedin.com/in/nandiniyadav2003/" target="blank">
+                  <i className="ri-linkedin-line"></i>
                 </Link>
               </span>
               <span>

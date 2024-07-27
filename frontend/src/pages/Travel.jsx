@@ -20,6 +20,22 @@ const Travel = () => {
       <section>
         <Container>
           <Row>
+          <Col lg="2">
+              <div className="hero__img-box">
+                <img src={heroImg} alt="" />
+              </div>
+            </Col>
+            <Col lg="2">
+              <div className="hero__img-box hero__video-box mt-4">
+                <video src={heroVideo} alt="hero video" controls />
+              </div>
+            </Col>
+            <Col lg="2">
+              <div className="hero__img-box mt-5">
+                <img src={heroImg02} alt="" />
+              </div>
+            </Col>
+
             <Col lg="6">
               <div className="hero__content">
                 <div className="hero__subtitle d-flex align-items-center">
@@ -39,21 +55,7 @@ const Travel = () => {
                 </p>
               </div>
             </Col>
-            <Col lg="2">
-              <div className="hero__img-box">
-                <img src={heroImg} alt="" />
-              </div>
-            </Col>
-            <Col lg="2">
-              <div className="hero__img-box hero__video-box mt-4">
-                <video src={heroVideo} alt="hero video" controls />
-              </div>
-            </Col>
-            <Col lg="2">
-              <div className="hero__img-box mt-5">
-                <img src={heroImg02} alt="" />
-              </div>
-            </Col>
+
             <Col lg="12">
               <SearchBar />
             </Col>

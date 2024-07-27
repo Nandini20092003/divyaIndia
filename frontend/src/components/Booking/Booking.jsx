@@ -5,16 +5,15 @@ import { useNavigate } from "react-router-dom";
 import { BASE_URL } from "../../utils/config";
 import { AuthContext } from "../../context/AuthContext";
 
-const Booking = ({ tour, avgRating }) => {
-  const { price, reviews, title } = tour;
+const Booking = ({ tour = {}, avgRating = 0 }) => {
+  const { price = 0, reviews = [], title = "Tour" } = tour;
 
   const navigate = useNavigate();
-
   const { user } = useContext(AuthContext);
 
   const [booking, setBooking] = useState({
-    userId: user && user._id,
-    userEmail: user && user.email,
+    userId: user?._id || "",
+    userEmail: user?.email || "",
     tourName: title,
     fullName: "",
     phone: "",
@@ -34,7 +33,7 @@ const Booking = ({ tour, avgRating }) => {
     e.preventDefault();
     console.log(booking);
     try {
-      if (!user || user === undefined || user === null) {
+      if (!user) {
         return alert("Please Sign in");
       }
       const res = await fetch(`${BASE_URL}/booking`, {
@@ -63,7 +62,7 @@ const Booking = ({ tour, avgRating }) => {
         </h3>
         <span className="tour__rating d-flex align-items-center">
           <i className="ri-star-s-fill"></i>{" "}
-          {avgRating === 0 ? null : avgRating} ({reviews?.length})
+          {avgRating || "N/A"} ({reviews.length})
         </span>
       </div>
 
@@ -111,7 +110,7 @@ const Booking = ({ tour, avgRating }) => {
         <ListGroup>
           <ListGroupItem className="border-0 px-0">
             <h5 className="d-flex align-items-center gap-1">
-              ₹{price} <i class="ri-close-line"></i> 1 person{" "}
+              ₹{price} <i className="ri-close-line"></i> 1 person{" "}
             </h5>
             <span>₹{price}</span>
           </ListGroupItem>

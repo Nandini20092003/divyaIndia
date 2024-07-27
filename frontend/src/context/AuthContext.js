@@ -1,10 +1,17 @@
 import { createContext, useEffect, useReducer } from "react";
 
+const getUserFromLocalStorage = () => {
+  const userString = localStorage.getItem("user");
+  try {
+    return userString ? JSON.parse(userString) : null;
+  } catch (error) {
+    console.error("Error parsing JSON from localStorage:", error);
+    return null;
+  }
+};
+
 const initial_state = {
-  user:
-    localStorage.getItem("user") !== undefined
-      ? JSON.parse(localStorage.getItem("user"))
-      : null,
+  user: getUserFromLocalStorage(),
   loading: false,
   error: null,
 };
@@ -53,7 +60,11 @@ export const AuthContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AuthReducer, initial_state);
 
   useEffect(() => {
-    localStorage.setItem("user", JSON.stringify(state.user));
+    if (state.user) {
+      localStorage.setItem("user", JSON.stringify(state.user));
+    } else {
+      localStorage.removeItem("user");
+    }
   }, [state.user]);
 
   return (

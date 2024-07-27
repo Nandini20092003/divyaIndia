@@ -1,8 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
 import ava01 from "../../assets/images/ava-1.jpg";
-import ava02 from "../../assets/images/ava-2.jpg";
-import ava03 from "../../assets/images/ava-3.jpg";
+import ava02 from "../../assets/images/ava-2.png";
+import ava03 from "../../assets/images/ava-3.png";
 
 const Testimonials = () => {
   const settings = {
@@ -42,9 +42,9 @@ const Testimonials = () => {
           breathtaking, and we can't wait to book our next adventure with them!
         </p>
         <div className="d-flex align-items-center gap-4 mt-3">
-          <img src={ava02} alt="Customer Avatar" className="w-25 h-25 rounded-2" />
+          <img src={ava01} alt="Customer Avatar" className="w-25 h-25 rounded-2" />
           <div>
-            <h6 className="mb-0 mt-3">Shruti Patel</h6>
+            <h6 className="mb-0 mt-3">Nandini Yadav</h6>
             <p>Customer</p>
           </div>
         </div>
@@ -57,9 +57,9 @@ const Testimonials = () => {
           created unforgettable memories together, thanks to their expertise.
         </p>
         <div className="d-flex align-items-center gap-4 mt-3">
-          <img src={ava03} alt="Customer Avatar" className="w-25 h-25 rounded-2" />
+          <img src={ava02} alt="Customer Avatar" className="w-25 h-25 rounded-2" />
           <div>
-            <h6 className="mb-0 mt-3">Vishnu Rao</h6>
+            <h6 className="mb-0 mt-3">Rahul Yadav</h6>
             <p>Customer</p>
           </div>
         </div>
@@ -72,9 +72,9 @@ const Testimonials = () => {
           experience.
         </p>
         <div className="d-flex align-items-center gap-4 mt-3">
-          <img src={ava01} alt="Customer Avatar" className="w-25 h-25 rounded-2" />
+          <img src={ava03} alt="Customer Avatar" className="w-25 h-25 rounded-2" />
           <div>
-            <h6 className="mb-0 mt-3">Priya Sharma</h6>
+            <h6 className="mb-0 mt-3">Shivam Yadav</h6>
             <p>Customer</p>
           </div>
         </div>
